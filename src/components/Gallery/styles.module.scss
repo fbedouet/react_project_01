@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.gallery{
+    max-width: $max-width - 110px;
+    margin: auto;
+    background-color: $cl_background_gallery;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:55px;
+    padding: 55px;
+    @media only screen and (max-width: 980px) {
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+}

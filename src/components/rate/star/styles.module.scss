@@ -1,0 +1,17 @@
+/* KasaLogo styles.module.scss */
+
+@import '../../../styles/variables';
+
+.star {
+    &Fill {
+        width: $width_logo_star;
+        aspect-ratio: 1/1;
+        fill: $primary_color;
+    }
+
+    &Empty {
+        width: $width_logo_star;
+        aspect-ratio: 1/1;
+        fill: $cls_empty_star;
+    }
+}

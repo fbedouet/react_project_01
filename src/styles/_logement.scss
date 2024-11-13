@@ -1,0 +1,73 @@
+@import "./variables";
+
+.logement{
+
+    &Information1{
+        display: flex;
+        justify-content: space-between;
+        color: $primary_color;
+        font-family: $mst-med;
+        font-size: 18px;
+
+        &__title{
+            font-size: 36px;
+        }
+
+        &__location{
+            color: $cl_txt-default;
+        }
+
+  
+        &__host{
+            display: flex;
+            align-items: center;
+            text-align: end;
+            gap: 10px;
+
+            &Picture{
+                width: 64px;
+                aspect-ratio: 1/1;
+                border-radius: 32px;
+            }
+        }
+
+
+    }
+
+    &Information2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary_color;
+        font-family: $mst-med;
+        font-size: 18px;
+
+        &__tags{
+            display: flex;
+            &Tag{
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                padding: 0px 40px;
+                background-color: $primary_color;
+                color: $cl_txt_light;
+                font-family: $mst-bold;
+                height: 25px;
+                font-size: 14px;
+                margin-top: 20px;
+                border-radius: 10px;
+            }
+        }
+
+        &__rate{
+            display: flex;
+            justify-content: space-between;
+            gap: 4px;
+        }
+    }
+
+    &Information3{
+        display: flex;
+        gap: 76px;
+    }
+}

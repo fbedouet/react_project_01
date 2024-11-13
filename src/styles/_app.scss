@@ -1,0 +1,9 @@
+@import "./variables";
+
+#root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    margin-top: 45px;
+}

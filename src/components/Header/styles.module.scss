@@ -1,0 +1,28 @@
+/* Header styles.module.css */
+
+@import '../../styles/variables';
+
+.header {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $max-width;
+        margin: auto;
+        @media only screen and (max-width: 980px) {
+            //margin: 0 $width_mob;
+        }
+
+        &Nav{
+            display: flex;
+            gap: $gap_nav;
+            font-family: $mst-med;
+            font-size: $fs_nav;
+            @media only screen and (max-width: 980px){
+                gap: $gap_mob_nav;
+                font-size: $fs_mob_nav;
+                text-transform: uppercase;
+            }
+         }
+    }
+}

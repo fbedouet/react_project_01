@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'mstBold';
+    src: url('src/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mstMed';
+    src: url('src/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mstReg';
+    src: url('src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+// all
+$max-width: 1920px;
+$width_mob: 20px;
+
+// fonts
+$mst-bold: 'mstBold', sans-serif;
+$mst-med: 'mstMed', sans-serif;
+$mst-reg: 'mstReg', sans-serif;
+
+//color
+$primary_color: #ff6060;
+$cl_txt-default: black;
+$cl_txt_light: white;
+$cls_empty_star: #e3e3e3;
+
+// header
+$cl_logo_header:$primary_color;
+$fs_nav: 24px;
+$gap_nav: 57px;
+$width_logo_header: 210px;
+$height_logo_header: 68px;
+
+$fs_mob_nav: 12px;
+$gap_mob_nav: 26px;
+$width_mob_logo_header: 145px;
+$height_mob_logo_header: 47px;
+
+// Banner
+$radius_banner: 25px;
+$height_banner: 223px;
+$fs_banner:48px;
+
+$radius_mob_banner: 10px;
+$height_mob_banner: 111px;
+$fs_mob_banner:24px;
+$mrg_left_mob_banner: 20px;
+
+//footer
+$height_logo_footer: 40px;
+$width_logo_footer: 132px;
+$cl_logo_footer: #ffffff;
+$cl_background_footer: black;
+$height_footer: 209px;
+$fs_footer:24px;
+
+$fs_mob_footer: 12px;
+$width_mob_text_footer: $width_logo_footer - 20px;
+
+//Gallery
+$cl_background_gallery: #f6f6f6;
+
+//Thumb
+$height_thumb: 340px;
+$width_thumb: $height_thumb;
+$mrg_text_thumb: 25px;
+$cl_background_thumb: $primary_color;
+$cl_background_shad_thumb: #c84848;
+
+//Rate
+$width_logo_star: 24px;

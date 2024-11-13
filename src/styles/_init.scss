@@ -1,0 +1,14 @@
+@import "../styles/variables";
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color:$cl_txt-default;
+    &:visited{
+        color: $cl_txt-default;
+    }
+}
+
+body,p, h1,h2,h3 {
+    margin: 0;
+}

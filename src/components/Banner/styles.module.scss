@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.banner{
+    max-width: $max-width;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    @media only screen and (max-width: 980px) {
+        width: auto;
+        margin: 0;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: $radius_banner;
+        height: $height_banner;
+        object-fit: cover;
+        filter:brightness(0.5);
+        @media only screen and (max-width: 980px){
+            height: $height_mob_banner;
+            border-radius: $radius_mob_banner;
+        }
+    }
+
+    &__sloggan {
+        height: $height_banner;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        font-size: $fs_banner;
+        font-family: $mst-bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 black, 
+                     -1px 1px 0 black, 
+                     1px -1px 0 black, 
+                     -1px -1px 0 black;
+       @media only screen and (max-width: 980px){
+            font-size: $fs_mob_banner;
+            text-shadow: 0px 0px 0 black;
+            height: $height_mob_banner;
+            justify-content: flex-start;
+            margin-left: $mrg_left_mob_banner;
+       }
+    }
+}   

@@ -1,0 +1,21 @@
+/* KasaLogo styles.module.scss */
+
+@import '../../styles/variables';
+
+.kasaLogo {
+    &Header {
+        width: $width_logo_header;
+        height: $height_logo_header;
+        fill: $cl_logo_header;
+        @media only screen and (max-width: 980px) {
+            width: $width_mob_logo_header;
+            height: $height_mob_logo_header;
+        };
+    }
+
+    &Footer {
+        width: $width_logo_footer;
+        height: $height_logo_footer;
+        fill: $cl_logo_footer;
+    }
+}

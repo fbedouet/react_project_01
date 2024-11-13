@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: $cl_background_footer;
+    height: $height_footer;
+    @media only screen and (max-width: 980px) {
+        justify-content: center;
+    }
+
+    p{
+        color: white;
+        font-family: $mst-med;
+        font-size: $fs_footer;
+        @media only screen and (max-width: 980px) {
+            font-size: $fs_mob_footer;
+            width: $width_mob_text_footer;
+            text-align:center;
+            padding: 10px 10px 0 10px;
+        }
+    }
+}

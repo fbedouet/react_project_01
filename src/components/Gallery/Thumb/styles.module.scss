@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.thumb{
+    position: relative;
+    aspect-ratio: 1/1;
+    background: linear-gradient(0deg, $cl_background_shad_thumb , $cl_background_thumb 100%) ;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    font-size: 18px;
+    font-family: $mst-bold;
+    cursor: pointer;
+    
+    &__cover{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    & p{
+        color: $cl_txt_light;
+        z-index: 2;
+        padding: 0 $mrg_text_thumb $mrg_text_thumb $mrg_text_thumb;
+    }
+}
