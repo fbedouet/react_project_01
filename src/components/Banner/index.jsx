@@ -9,7 +9,7 @@ export function Banner ({image, text}){
             className={styles.banner__img}
         />
         <div className={styles.banner__sloggan}>
-            <span>{text}</span>
+            <p>{text}</p>
         </div>
     </div>
 }

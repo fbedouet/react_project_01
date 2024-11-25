@@ -7,3 +7,17 @@
     row-gap: 50px;
     margin-top: 45px;
 }
+
+main > :first-child {
+    margin-bottom: 45px;
+}
+
+header, main{
+    width: $max-width;
+    max-width: $max-width;
+    margin: auto;
+    @media only screen and (max-width: 1280px) {
+        width: auto;
+        margin: 0 20px;   
+    }
+}
