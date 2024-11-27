@@ -10,14 +10,17 @@ export function Header({selected}){
         <nav className={styles.header__nav} >
             <Link 
                 to='/'
-                style={selected.toLowerCase()==='acceuil'?{textDecoration: 'underline'}:undefined} 
+                style={selected.toLowerCase()==='accueil'?{textDecoration: 'underline'}:undefined} 
             >
-                Acceuil
+                Accueil
             </Link>
-            <a 
+            <Link 
+                to='/apropos'
                 style={selected.toLowerCase()==='a propos'?{textDecoration: 'underline'}:undefined}
-                href="#">A Propos
-            </a>
+                // href="#"
+            >
+                A Propos
+            </Link>
         </nav>
     </div>
 }

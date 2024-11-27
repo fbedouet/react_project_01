@@ -11,7 +11,7 @@ export function App() {
 
 return<>
   <header>
-    <Header selected={'A propos'} />
+    <Header selected={'accueil'} />
   </header>
   <main>
     <Banner image={'src/assets/images/background_1.jpg'} text={'Chez vous, partout et ailleurs'}/>

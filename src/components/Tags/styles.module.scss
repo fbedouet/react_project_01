@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.tags{
+    display: flex;
+
+    &__tag{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        padding: 0px 40px;
+        background-color: $primary_color;
+        color: $cl_txt_light;
+        font-family: $mst-bold;
+        height: 25px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}

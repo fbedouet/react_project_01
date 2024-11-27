@@ -2,4 +2,7 @@
 
 .rate{
     color:$primary_color;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
 }

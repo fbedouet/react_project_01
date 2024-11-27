@@ -13,8 +13,8 @@ export function Rate ({rating}) {
         
     }
     
-    return<>
+    return<div className={styles.rate}>
         {stars}
-    </>
+    </div>
     
 }

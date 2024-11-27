@@ -1,11 +1,15 @@
 @import "./variables";
+body, html{
+    height: 100%;
+}
 
 #root {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     row-gap: 50px;
     margin-top: 45px;
+    min-height: 100vh;
 }
 
 main > :first-child {
@@ -19,5 +23,69 @@ header, main{
     @media only screen and (max-width: 1280px) {
         width: auto;
         margin: 0 20px;   
+    }
+}
+
+main{
+    flex: 1;
+}
+
+.logement{
+    display: flex;
+    flex-direction: column;
+    gap:22px;
+
+    &Information1{
+        display: flex;
+        justify-content: space-between;
+        color: $primary_color;
+        font-family: $mst-med;
+        font-size: 18px;
+
+        &__title{
+            font-size: 36px;
+        }
+
+        &__location{
+            color: $cl_txt-default;
+        }
+
+        &__host{
+            display: flex;
+            align-items: center;
+            text-align: end;
+            gap: 10px;
+
+            &Picture{
+                width: 64px;
+                aspect-ratio: 1/1;
+                border-radius: 32px;
+            }
+        }
+    }
+
+    &Information2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary_color;
+        font-family: $mst-med;
+        font-size: 18px;
+    }
+
+    &Information3{
+        display: flex;
+        gap: 76px;
+    }
+}
+
+.apropos{
+    display: grid;
+    gap: 38px;
+    justify-items: center;
+    &__dropbox{
+        display: grid;
+        width: 74%;
+        gap: 18px;
     }
 }
