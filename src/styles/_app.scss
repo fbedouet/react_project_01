@@ -89,3 +89,26 @@ main{
         gap: 18px;
     }
 }
+
+.error{
+    display: grid;
+    text-align: center;
+    &__code{
+        color:  $primary_color;
+        font-size: 288px;
+        font-family: $mst-bold;
+    }
+
+    &__text{
+        color: $primary_color;
+        font-size: 36px;
+        font-family: $mst-med;
+    }
+
+    &__link{
+        margin-top: 100px;
+        text-decoration: underline;
+        font-size: 18px;
+        font-family: $mst-med;
+    }
+}

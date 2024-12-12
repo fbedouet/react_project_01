@@ -1,20 +1,34 @@
 import { App } from "./App"
-import { APropos } from "./pages/apropos"
-import { Logement } from "./pages/logement"
+import { About } from "./pages/About"
+import { Apartment } from "./pages/Apartment"
+import { Homepage } from "./pages/Homepage"
+import { PageError } from "./pages/PageError"
+
 
 const rooter = [
     {
       path: '/',
-      element: <App/>
+      element: <App/>,
+      errorElement: <PageError/>,
+      children: [
+        {
+          path: '',
+          element: <Homepage/>,
+        },
+        {
+          path: '/apropos',
+          element:<About/>,
+        },
+        {
+          path: '/:id',
+          element: <Apartment/>,
+        },
+        {
+          path:'/error404',
+          element: <PageError/>,
+        }
+      ]
     },
-    {
-      path: '/:id',
-      element: <Logement/>
-    },
-    {
-      path: '/apropos',
-      element:<APropos/>
-    }
   ]
 
 export default rooter
