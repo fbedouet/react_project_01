@@ -13,21 +13,30 @@
         //height: 415px;
         object-fit: cover;
         border-radius: 25px;
+        @media only screen and (max-width: 980px) {
+            aspect-ratio: 1.31/1;
+            border-radius: 10px;
+        }
     }
 
     & svg{
         position: absolute;
-        width: 79px;
+        width: 5%;
+        aspect-ratio: 1/1;
         fill: $cl_txt_light;
+        stroke-width: 30%;
+        stroke: white;
         cursor: pointer;
     }
     &__arrow{
         &Left{
-            left: 50px;;
+            transform: rotate(-45deg);
+            left: 3%;
         }
 
         &Right{
-            right: 50px;
+            transform: rotate(135deg);
+            right: 3%;
         }
     }
 }
@@ -40,4 +49,7 @@
     font-size: 18px;
     bottom:18px;
     color: white;
+    @media only screen and (max-width: 980px) {
+        display: none;
+    }
 }

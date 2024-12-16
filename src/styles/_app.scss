@@ -7,13 +7,11 @@ body, html{
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
     margin-top: 45px;
     min-height: 100vh;
-}
-
-main > :first-child {
-    margin-bottom: 45px;
+    @media only screen and (max-width: 980px) {
+        margin-top: 27px;
+    }
 }
 
 header, main{
@@ -28,30 +26,71 @@ header, main{
 
 main{
     flex: 1;
+    padding: 50px 0;
+    @media only screen and (max-width: 1280px) {
+        padding: 27px 0;  
+    }
+}
+
+.homepage >:first-child{
+    margin-bottom: 45px;
+    @media only screen and (max-width: 1280px) {
+        margin-bottom: 22px;
+    }
 }
 
 .logement{
     display: flex;
-    flex-direction: column;
-    gap:22px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 30px;
+    @media only screen and (max-width: 980px) {
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
 
     &Information1{
-        display: flex;
-        justify-content: space-between;
         color: $primary_color;
         font-family: $mst-med;
         font-size: 18px;
 
         &__title{
             font-size: 36px;
+            @media only screen and (max-width: 980px) {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
         }
 
         &__location{
             color: $cl_txt-default;
+            margin-bottom: 15px;
+            @media only screen and (max-width: 980px) {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
         }
 
+        //&--tag
+
+    }
+
+    &Information2{
+        color: $primary_color;
+        font-family: $mst-med;
+        font-size: 18px;
+        @media only screen and (max-width: 980px) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+ 
         &__host{
             display: flex;
+            justify-content: flex-end;
             align-items: center;
             text-align: end;
             gap: 10px;
@@ -60,33 +99,36 @@ main{
                 width: 64px;
                 aspect-ratio: 1/1;
                 border-radius: 32px;
+                @media only screen and (max-width: 980px) {
+                    width: 32px;
+                }
             }
         }
-    }
-
-    &Information2{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: $primary_color;
-        font-family: $mst-med;
-        font-size: 18px;
     }
 
     &Information3{
         display: flex;
         gap: 76px;
+        @media only screen and (max-width: 980px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 }
 
 .apropos{
     display: grid;
-    gap: 38px;
     justify-items: center;
     &__dropbox{
+        margin-top: 38px;
         display: grid;
         width: 74%;
-        gap: 18px;
+        gap: 30px;
+        @media only screen and (max-width: 980px) {
+            margin-top: 19px;
+            width: 100%;
+            gap: 20px;
+        }
     }
 }
 

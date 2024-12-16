@@ -35,26 +35,24 @@ export function Apartment () {
                 <div>
                     <p className="logementInformation1__title">{title}</p>
                     <p className="logementInformation1__location">{location}</p>
-                </div>
-                <div>
-                    <div className="logementInformation1__host">
-                        <div>
-                            <p >{hostNames[0]}</p>
-                            <p>{hostNames[1]}</p>
-                        </div>
-                        <img src={host.picture} alt="" className="logementInformation1__hostPicture"/>
-                    </div>
+                    <Tags tags={tags}/>
                 </div>
             </div>
             <div className="logementInformation2">
-                <Tags tags={tags}/>
+                <div className="logementInformation2__host">
+                    <div>
+                        <p >{hostNames[0]}</p>
+                        <p>{hostNames[1]}</p>
+                    </div>
+                    <img src={host.picture} alt="" className="logementInformation2__hostPicture"/>
+                </div>
                 <Rate rating={rating}/>
             </div>
+        </div>
             <div className="logementInformation3">
                 <DropBox title={"Description"} content={boxContent(description)}/>
                 <DropBox title={"Équipements"} content={boxContent(equipments)}/>
             </div>
-        </div>
     </main>
 
 }

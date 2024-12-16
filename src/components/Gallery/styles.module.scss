@@ -11,7 +11,10 @@
     gap:55px;
     padding: 55px;
     @media only screen and (max-width: 980px) {
+        padding: 0;
         margin: 0;
         grid-template-columns: 1fr;
+        gap: 20px;
+        background-color: white;
     }
 }

@@ -3,6 +3,8 @@
 .rate{
     color:$primary_color;
     display: flex;
-    justify-content: space-between;
-    gap: 4px;
+    gap: 15px;
+    @media only screen and (max-width: 980px) {
+        gap: 7px
+    }
 }
