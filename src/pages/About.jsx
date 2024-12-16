@@ -1,5 +1,6 @@
 import { Banner } from "../components/Banner";
 import { DropBox } from "../components/dropbox";
+import bannerImg from "../assets/images/background_2.jpg"
 
 export function About (){
     const reliability = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les infomations sont régulièrement vérifiées par nos équipes."
@@ -9,7 +10,7 @@ export function About (){
     
     return <main>
         <div className="apropos">
-            <Banner image={'src/assets/images/background_2.jpg'}/>
+            <Banner image={bannerImg}/>
             <div className="apropos__dropbox">
                 <DropBox title={"Fiabilité"} content={reliability}/>
                 <DropBox title={"Respect"} content={respect} />
